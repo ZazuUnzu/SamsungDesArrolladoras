@@ -13,8 +13,8 @@
 <!-- Este es el bloque para los datos personales -->
 	<fieldset name="Datos personales">
 		<legend>Datos personales</legend>
-			<label for="nombre" id="nombre">Nombre:</label>
-				<input type="text" name="nombre" maxlength="30"><br>
+			<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" maxlength="30"><br>
 			<label for="apellidos">Apellidos:</label>
 				<input type="text" name="apellidos" id="apellidos" maxlength="60"><br>
 			<label for="direccion">Dirección:</label>
@@ -56,11 +56,11 @@
 	<fieldset name="Datos Bancarios">
 	<legend>Datos bancarios</legend>
 		<label for="pais">País:</label>
-			<input type="text" name="pais" id="pais" value="ES" disabled="readonly"> (solo válido ES)<br>
+			<input type="text" name="pais" id="pais" value="ES" readonly> (solo válido ES)<br>
 		<label for="iban">Control IBAN:</label>
 			<input type="text" name="iban" id="iban" minlength="2" maxlength="2" pattern="[0-9]{2}" placeholder="XX"> (dos dígitos)<br>
 		<label for="entidad">Entidad:</label>
-			<input type="text" name="entidad" id="entidad" minlength="4" maxlength="4 pattern[0-9]{4}" placeholder="XXXX"> (cuatro dígitos)<br>
+			<input type="text" name="entidad" id="entidad" minlength="4" maxlength="4" pattern[0-9]{4}" placeholder="XXXX"> (cuatro dígitos)<br>
 		<label for="sucursal">Sucursal:</label>
 			<input type="text" name="sucursal" id="sucursal" minlength="4" maxlength="4" pattern="[0-9]{4}" placeholder="XXXX"> (cuatro dígitos) <br>
 		<label for="dc">Dígito de control:</label>
@@ -107,7 +107,7 @@
   <button type="button" onclick="MostrarDiaSemana()">Mostrar día semana</button></div> <br>
 
 
-<!--Y, a continuación, las funciones que deben ejecutar estos últimos botones. He puesto el javascript al final de <body> porque es una buena práctica para mejorar la carga -->
+<!--Y, a continuación, las funciones que deben ejecutar estos últimos botones. He puesto la llamada el javascript al final de <body> porque es una buena práctica para mejorar la carga -->
 
 <script src="misfunciones.js"></script>
 </body>
