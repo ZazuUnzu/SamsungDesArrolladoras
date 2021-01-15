@@ -1,0 +1,46 @@
+h1 {
+	color: blue;
+  text-shadow: 1px 2px yellow;
+	text-align: center;
+}
+
+fieldset {
+  background-color:cyan;
+  border:0;
+  border-radius:5px;
+  margin-top:16px;
+}
+
+legend {
+  color: white;
+	background-color:red;
+}
+
+/* Aquí me interesa aplicar un estilo solo a los elementos "input" que tengan el atributo "text" */
+
+input[type="text"] {
+  background-color:yellow;
+  border:1px inset;
+  border-radius:5px;
+}
+
+/* Y aquí un pequeño margen inferior al último fieldset, ya que un <br> es demasiado */
+
+fieldset[name="estadistica"] {
+  margin-bottom:3px;
+}
+
+
+/* Los botones que llaman a funciones javascript tienen un estilo distinto a los del formulario */
+
+div.botonera {
+  margin:10px 0px;
+}
+
+button[type="button"] {
+  width:95px;
+  background:pink;
+  border-radius:5px;
+  border:1px outset;
+  
+}
